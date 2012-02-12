@@ -1,5 +1,6 @@
 { "name": "configure"
 , "version": "0.0.0-dev"
+, "main": "./configure.js"
 , "dependencies": 
-  {  }
+  { "nopt": "*" }
 }

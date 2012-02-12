@@ -1,0 +1,4 @@
+h1. node.js addon configuration utilities
+
+
+<!-- vim: set spell spelllang=en_us : -->
