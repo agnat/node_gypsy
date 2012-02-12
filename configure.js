@@ -5,10 +5,12 @@ var spawn = require('child_process').spawn
   , knownOptions =
     { 'help'      : Boolean
     , 'gyp-help'  : Boolean
-    , 'node-tree' : Boolean
+    , 'node-tree' : path
     }
   , help =
-    { 
+    { 'help'      : 'print this text and exit'
+    , 'gyp-help'  : 'print gyp help'
+    , 'node-tree' : ['directory', 'configure using node found in directory']
     }
   ;
 
@@ -27,6 +29,7 @@ exports.configure = function configure(checks) {
       console.log('running gyp ...')
       gyp_addon(config) 
     }
+    config.node = require('build_configuration');
     checks(config, done);
   }
 }
@@ -37,7 +40,7 @@ exports.options = function options(f) {
 
 function gyp_addon(config) {
   var args = gyp_arguments(config.gyp)
-    , gyp = spawn(path.join(process.buildDir, 'tools', 'gyp_addon'), args)
+    , gyp = spawn(path.join(config.node.buildTree, 'tools', 'gyp_addon'), args)
     ;
   
   console.log('gyp args:', args)
