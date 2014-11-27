@@ -2,5 +2,14 @@
 , "version": "0.0.0-dev"
 , "main": "./configure.js"
 , "dependencies": 
-  { "nopt": "*" }
+  { "nopt"    : "*"
+  , "which"   : "*"
+  , "slide"   : "*"
+  , "fire-ts" : "*"
+  , "node-gyp": "*"
+  , "mkdirp"  : "*"
+  , "tap"     : "*"
+  , "npmlog"  : "*"
+  , "temp"    : "*"
+  }
 }
