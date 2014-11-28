@@ -1,0 +1,7 @@
+{ "name": "sample"
+, "version": "0.0.0-dev"
+, "scripts": {"install": "./configure.js"}
+, "dependencies": 
+  { "gypsy"   : "../"
+  }
+}
