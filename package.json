@@ -1,10 +1,23 @@
-{ "name": "configure"
+{ "name": "gypsy"
 , "version": "0.0.0-dev"
-, "main": "./configure.js"
+, "description": "autoconf for node add-ons"
+, "keywords": ["autoconf", "gyp", "node-gyp", "add-on", "configure"]
+, "repository":
+  { "type": "git"
+  , "url":  "http://github.com/agnat/node_gypsy.git"
+  }
+, "licenses": [
+    { "type": "MIT"
+    , "url": "http://github.com/agnat/node_gypsy/raw/master/LICENSE"
+    }
+  ]
+, "author":
+  { "name":   "David Siegel"
+  , "email":  "david@artcom.de"
+  , "github": "agnat"
+  }
 , "dependencies": 
-  { "nopt"    : "*"
-  , "which"   : "*"
-  , "slide"   : "*"
+  { "slide"   : "*"
   , "fire-ts" : "*"
   , "node-gyp": "*"
   , "mkdirp"  : "*"

@@ -1,4 +1,5 @@
-h1. node.js addon configuration utilities
+h1. node addon configuration utilities
 
+Spit and glue. Born out of need. We'll see...
 
 <!-- vim: set spell spelllang=en_us : -->
